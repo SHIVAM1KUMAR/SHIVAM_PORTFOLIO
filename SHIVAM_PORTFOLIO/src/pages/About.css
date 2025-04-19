@@ -1,0 +1,68 @@
+/* About Section - Simple & Responsive Design */
+.about-section {
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.7);  /* Dark background with slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);  /* Soft shadow for depth */
+    position: relative;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1506748686212-4e510e8b6807') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 30px 20px;
+    }
+    
+    .about-section h1 {
+        font-size: 28px;
+    }
+    
+    .about-section p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 20px 15px;
+    }
+    
+    .about-section h1 {
+        font-size: 24px;
+    }
+    
+    .about-section p {
+        font-size: 12px;
+    }
+}
